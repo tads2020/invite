@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animação - Star Wars</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+		body {
+			color: yellow;
+			background-color: black;
+			font-weight: bold;
+			font-family: 'Source Sans Pro';
+		}
+		.wrapper {
+			width: 300px;
+			margin: auto;
+			animation: sobe 200s linear forwards;
+			animation-fill-mode: forwards;
+			text-align:justify;
+		}
+
+		.angulacao {
+			perspective: 300px;
+			perspective-origin: 50% 0px;
+			transform-style: preserve-3d;
+		}
+
+		@keyframes sobe {
+			from {transform: rotateX(90deg) translateY(325px);}
+			to {transform: rotateX(90deg) translateY(-2000px);}
+		}
+
+		.titulo {
+			text-align:center;
+			font-size: 5em;
+			animation: some 100s;
+		}
+
+		@keyframes some {
+			from {opacity: 1; transform: translateZ(300px);}
+			to{opacity: 0; transform: translateZ(-10000px);}
+		}
+
+	</style>
+</head>
+<body>
+	<iframe src="https://tads2020.github.io/invite/audio.ogg" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+
+	<div class="angulacao">
+		<h1 class="titulo">TADS WARS</h1>
+		<div class="wrapper">
+			<br />
+			<br />
+			<br />
+			<br />
+			<p>Há muito tempo numa galáxia 
+			não tão distante, 4 alunos 
+			ingressaram como padawans 
+			em um curso de Análise e 
+			Desenvolvimento de Sistemas...</p>
+			<p>
+			Após anos de treinamento 
+			e árduas provações, 
+			noites em claro, esforços 
+			e prazos,
+			ensinados por diversos mestres 
+			ao longo do caminho,
+			chegou o momento onde os 
+			aprendizes necessitavam escolher
+			apenas um mestre para ser 
+			o seu Patrono...</p>
+			<p>
+			E entre o conselho dos aprendizes
+			escolhemos você, Igor, 
+			para ocupar esta importante função.
+			A continuação dessa história 
+			está em suas mãos agora.
+			Aceita o convite de seus aprendizes
+			Elvis, Felipe, Nícolas e Miguel?</p>
+		</div>
+	</div>
+</body>
+</html>
